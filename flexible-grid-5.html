@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Grid</title>
+    <style>
+      #para {
+        font-size: 6em;
+      }
+      #para p:first-child {
+        font-size: 0.66em;
+      }
+      #para p:first-child + p {
+        font-size: 6rem;
+      }
+
+      #vw {
+        font-size: 3vw;
+      }
+      #vh {
+        font-size: 3vh;
+      }
+      #vmin {
+        font-size: 3vmin;
+      }
+      #vmax {
+        font-size: 3vmax;
+      }
+    </style>
+  </head>
+  <body>
+    <di>
+      <div id="para">
+        em 부모 폰트
+        <p>em 자식 폰트 (부모 상속 O)</p>
+        <p>rem 자식 폰트 (부모 상속 X)</p>
+      </div>
+
+      <div id="para2">
+        <p id="vw">vw 단위 - 웹 브라우저의 너비(100) 기준</p>
+        <p id="vh">vh 단위 - 웹 브라우저의 높이(100) 기준</p>
+        <p id="vmin">vmin 단위 - 웹 브라우저의 너비와 높이 중 짧은 쪽 기준</p>
+        <p id="vmax">vmax 단위 -웹 브라우저의 너비와 높이 중 큰 쪽 기준</p>
+      </div>
+    </di>
+  </body>
+</html>
