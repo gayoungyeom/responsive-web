@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      #wrap {
+        /*플렉서블 박스 기술은 아직 W3C의 기술 명세 확정 단계가 아니므로 반드시
+      브라우저 접두사를 붙여야 한다.*/
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        border: 4px solid #000;
+      }
+      #wrap div {
+        width: 33.33%;
+      }
+      #wrap div:first-child {
+        background: #eb4a24;
+      }
+      #wrap div:nth-child(2) {
+        background: #1488c8;
+      }
+      #wrap div:nth-child(3) {
+        background: #f7e041;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
